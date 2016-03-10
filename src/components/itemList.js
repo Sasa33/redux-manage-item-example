@@ -9,10 +9,10 @@ class Item extends React.Component {
     const { number, onDeleteItem } = this.props
 
     return (
-      <div>
-        <li style={ { display: 'inline-block', marginRight: '15px' } }>{ number }</li>
+      <li>
+        <span style={ { marginRight: '15px' } }>{ number }</span>
         <button onClick={ onDeleteItem }>delete</button>
-      </div>
+      </li>
     )
   }
 }
@@ -29,7 +29,7 @@ export default class ItemList extends React.Component {
     })
 
     return (
-      <ul style={{listStyle: 'circle'}}>
+      <ul style={{listStyle: 'dot'}}>
         { Items }
       </ul>
     )
