@@ -18,8 +18,7 @@ const items = (state = initState, action) => {
         ...state,
         {
           id: action.id,
-          text: action.id + 1,
-          visibility: true
+          text: action.id + 1
         }
       ]
     case DELETE_ITEM:
